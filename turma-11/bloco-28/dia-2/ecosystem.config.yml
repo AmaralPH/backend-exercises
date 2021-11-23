@@ -1,0 +1,16 @@
+apps:
+  - name: App
+    script: ./index.js
+    watch: true
+    exec_mode: cluster
+    instances: 2
+    max_memory_restart: 100M
+    env_prod:
+      mensagem: Eu estou em ambiente de PRODUÇÃO!!!
+    env_homolog:
+      mensagem: Eu estou em ambiente de HOMOLOGAÇÃO!!!
+  
+  - name: Eu amo coca-cola
+    script: ./index.js
+    exec_mode: cluster
+    instances: 3
