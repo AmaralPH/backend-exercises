@@ -1,7 +1,8 @@
 const express = require('express');
 const app = express();
 
-const { Book } = require('./controllers/Book');
+const controller = require('./controllers/Book');
+const { Book } = require('./models');
 
 app.use(express.json());
 
@@ -18,31 +19,6 @@ app.get('/books', async (_req, res) => {
   }
 });
 
-app.get('/book/:id', async (req, res) => {
-  try {
-    const { id } = req.params;
-    const book = Book.findByPk(id);
-
-    if (!book) return res.status(404).json({ message: 'Livro não encontrado' });
-
-    res.status(200).json(book);
-  } catch (e) {
-    console.log(e.message);
-
-    res.status(500).json({ message: 'Algo deu errado' });
-  }
-});
-
-app.post('/book', () => {
-
-})
-
-app.post('/book/:id', () => {
-
-})
-
-app.delete('/book/:id', () => {
-  
-})
+app.use('/book', controller);
 
 app.listen(PORT, () => console.log(`Ouvindo na porta ${PORT}`))
