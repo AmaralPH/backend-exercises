@@ -1,0 +1,22 @@
+.logo {
+  background-color: green;
+  height: 20px;
+  margin: auto;
+  width: 20px;
+}
+
+.Header {
+  background-color: rgba(0, 0, 0, 0.103);
+  display: flex;
+  justify-content: space-around;
+}
+
+.auction-name {
+  display: flex;
+}
+
+.input-name {
+  margin-top: auto;
+  margin-bottom: auto;
+  justify-content: center;
+}
