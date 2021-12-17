@@ -1,7 +1,9 @@
 module.exports = (io) => {
   io.on('connection', (socket) => {
-    socket.on('lanceOnProduct', ({ _id, currentPrice }) => {
-      console.log(_id, currentPrice)
+    // console.log(socket.id);
+
+    socket.on('makeBid', (price) => {
+      socket.emit('bidMaked', price + 5);
     })
   });
 }

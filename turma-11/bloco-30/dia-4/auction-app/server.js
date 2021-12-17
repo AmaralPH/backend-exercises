@@ -13,15 +13,11 @@ const io = require('socket.io')(http, {
   },
 });
 
-const controllers = require('./controllers/Products.js');
+require(`./sockets/auction.js`)(io);
 
-// app.get('/', (_req, res) => {
-//   res.(`${__dirname}/views/src/index.js`);
-// });
+const controllers = require('./controllers/Products.js');
 
 app.post('/', controllers.saveProduct);
 app.get('/products', controllers.getAll);
-
-require(`./sockets/auction.js`)(io);
 
 http.listen(3000, () => console.log('Ouvindo na porta 3000'));
