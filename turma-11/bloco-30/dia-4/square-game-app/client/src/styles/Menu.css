@@ -1,0 +1,20 @@
+.menu {
+  align-items: center;
+  background-color: rgba(70, 131, 180, 0.171);
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  height: 86%;
+  margin-top: 6%;
+  padding-top: 1%;
+  position: absolute;
+  width: 20%;
+}
+
+.btn {
+  background-color: rgba(245, 245, 81, 0.966);
+  border-radius: 15px;
+  height: 40px;
+  margin: 6% 0;
+  width: 70%;
+}

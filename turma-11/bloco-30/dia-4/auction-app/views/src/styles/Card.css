@@ -1,0 +1,27 @@
+.Card {
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2%;
+  width: 30%;
+}
+
+.product-img {
+  width: 50%;
+}
+
+.product-price {
+  color: green;
+  margin-bottom: 0;
+}
+
+.buyer-name {
+  margin-top: 0;
+}
+
+.button {
+  height: 30px;
+  width: 40%
+}

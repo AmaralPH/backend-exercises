@@ -1,0 +1,13 @@
+.header {
+  align-items: center;
+  background-color: rgb(0, 34, 128);
+  color: white;
+  display: flex;
+  width: 100%
+}
+
+.game-logo {
+  margin: 0 20px;
+  height: 60px;
+  width: 60px;
+}
