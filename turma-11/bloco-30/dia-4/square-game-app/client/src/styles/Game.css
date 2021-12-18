@@ -1,0 +1,14 @@
+.game {
+  border: 1px solid black;
+  height: 88%;
+  position: absolute;
+  margin-left: 20%;
+  margin-top: 6%;
+  width: 79.885%;
+}
+
+#game-box {
+  background-color: steelblue;
+  height: 20%;
+  width: 15%;
+}
